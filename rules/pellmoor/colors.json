@@ -1,0 +1,88 @@
+{
+  "brand": "pellmoor",
+  "minContrast": {
+    "body": 7,
+    "large": 4.5
+  },
+  "decorationOnly": [
+    "color.palette.sun"
+  ],
+  "allowedPairs": [
+    {
+      "foreground": "color.palette.slate",
+      "background": "color.palette.bone",
+      "textSizes": [
+        "body",
+        "large"
+      ],
+      "use": "Body text on the page background"
+    },
+    {
+      "foreground": "color.palette.bone",
+      "background": "color.palette.slate",
+      "textSizes": [
+        "body",
+        "large"
+      ],
+      "use": "Reversed text on dark"
+    },
+    {
+      "foreground": "color.palette.slate",
+      "background": "color.palette.sand",
+      "textSizes": [
+        "body",
+        "large"
+      ],
+      "use": "Body text on a muted surface"
+    },
+    {
+      "foreground": "color.palette.sand",
+      "background": "color.palette.slate",
+      "textSizes": [
+        "body",
+        "large"
+      ],
+      "use": "Reversed text on dark, muted"
+    },
+    {
+      "foreground": "color.palette.pine",
+      "background": "color.palette.bone",
+      "textSizes": [
+        "large"
+      ],
+      "use": "Headings and links on the page background"
+    },
+    {
+      "foreground": "color.palette.bone",
+      "background": "color.palette.pine",
+      "textSizes": [
+        "large"
+      ],
+      "use": "Large text on a primary colour block"
+    },
+    {
+      "foreground": "color.palette.signal",
+      "background": "color.palette.bone",
+      "textSizes": [
+        "large"
+      ],
+      "use": "Large call to action text"
+    },
+    {
+      "foreground": "color.palette.bone",
+      "background": "color.palette.signal",
+      "textSizes": [
+        "large"
+      ],
+      "use": "Large text on a call to action block"
+    },
+    {
+      "foreground": "color.palette.lake",
+      "background": "color.palette.bone",
+      "textSizes": [
+        "large"
+      ],
+      "use": "Secondary headings"
+    }
+  ]
+}

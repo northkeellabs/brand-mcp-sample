@@ -1,0 +1,150 @@
+{
+  "brand": "tarnbury",
+  "channels": {
+    "web": [
+      {
+        "id": "hero",
+        "name": "Home page hero",
+        "width": 1600,
+        "height": 600,
+        "unit": "px",
+        "safeMargin": 48,
+        "slots": [
+          {
+            "name": "headline",
+            "required": true,
+            "maxChars": 60
+          },
+          {
+            "name": "subline",
+            "required": false,
+            "maxChars": 120
+          },
+          {
+            "name": "logo",
+            "required": true
+          },
+          {
+            "name": "image",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "strip",
+        "name": "Header strip",
+        "width": 1200,
+        "height": 200,
+        "unit": "px",
+        "safeMargin": 24,
+        "slots": [
+          {
+            "name": "headline",
+            "required": true,
+            "maxChars": 40
+          },
+          {
+            "name": "logo",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "social": [
+      {
+        "id": "square-post",
+        "name": "Square post",
+        "width": 1080,
+        "height": 1080,
+        "unit": "px",
+        "safeMargin": 72,
+        "slots": [
+          {
+            "name": "headline",
+            "required": true,
+            "maxChars": 50
+          },
+          {
+            "name": "logo",
+            "required": true
+          },
+          {
+            "name": "image",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "story",
+        "name": "Vertical story",
+        "width": 1080,
+        "height": 1920,
+        "unit": "px",
+        "safeMargin": 120,
+        "slots": [
+          {
+            "name": "headline",
+            "required": true,
+            "maxChars": 40
+          },
+          {
+            "name": "call-to-action",
+            "required": false,
+            "maxChars": 24
+          },
+          {
+            "name": "logo",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "email": [
+      {
+        "id": "header",
+        "name": "Email header",
+        "width": 600,
+        "height": 200,
+        "unit": "px",
+        "safeMargin": 20,
+        "slots": [
+          {
+            "name": "headline",
+            "required": true,
+            "maxChars": 45
+          },
+          {
+            "name": "logo",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "print": [
+      {
+        "id": "shelf-card",
+        "name": "Shelf card",
+        "width": 100,
+        "height": 150,
+        "unit": "mm",
+        "safeMargin": 6,
+        "slots": [
+          {
+            "name": "headline",
+            "required": true,
+            "maxChars": 30
+          },
+          {
+            "name": "subline",
+            "required": false,
+            "maxChars": 60
+          },
+          {
+            "name": "logo",
+            "required": true
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "colors.schema.json",
+  "title": "Brand colour rules",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "brand",
+    "minContrast",
+    "decorationOnly",
+    "allowedPairs"
+  ],
+  "properties": {
+    "brand": {
+      "type": "string",
+      "pattern": "^[a-z]+$"
+    },
+    "minContrast": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "body",
+        "large"
+      ],
+      "description": "Minimum WCAG 2.1 contrast ratio per text size. A brand may be stricter than AA, never looser.",
+      "properties": {
+        "body": {
+          "type": "number",
+          "minimum": 4.5,
+          "maximum": 21
+        },
+        "large": {
+          "type": "number",
+          "minimum": 3,
+          "maximum": 21
+        }
+      }
+    },
+    "decorationOnly": {
+      "type": "array",
+      "description": "Colour tokens that may never carry text.",
+      "items": {
+        "$ref": "#/$defs/colorPath"
+      },
+      "uniqueItems": true
+    },
+    "allowedPairs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "foreground",
+          "background",
+          "textSizes",
+          "use"
+        ],
+        "properties": {
+          "foreground": {
+            "$ref": "#/$defs/colorPath"
+          },
+          "background": {
+            "$ref": "#/$defs/colorPath"
+          },
+          "textSizes": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "body",
+                "large"
+              ]
+            }
+          },
+          "use": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 80
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "colorPath": {
+      "type": "string",
+      "pattern": "^color\\.palette\\.[a-z]+$"
+    }
+  }
+}

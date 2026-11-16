@@ -1,0 +1,11 @@
+﻿{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "brand-mcp-sample",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  // nodejs_compat: agents/mcp/server uses AsyncLocalStorage.
+  "compatibility_flags": ["nodejs_compat"],
+  // Public URL on our own domain; workers.dev stays disabled.
+  "workers_dev": false,
+  "routes": [{ "pattern": "brand-mcp.northkeellabs.com", "custom_domain": true }]
+}

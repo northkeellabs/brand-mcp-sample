@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "brand-mcp-sample-auth",
+  "main": "src/index-auth.ts",
+  "compatibility_date": "2026-11-01",
+  // nodejs_compat: agents/mcp/server uses AsyncLocalStorage.
+  // global_fetch_strictly_public: SSRF protection for Client ID Metadata Document fetches.
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "workers_dev": false,
+  "vars": {
+    "MCP_RESOURCE": "http://localhost:8787/mcp"
+  },
+  "kv_namespaces": [
+    // Local dev and tests only: miniflare simulates this namespace. Before any real deploy create one
+    // (npx wrangler kv namespace create OAUTH_KV) and put its id here. No Cloudflare resource is created by this sample.
+    { "binding": "OAUTH_KV", "id": "local-only-placeholder" }
+  ]
+  // Secrets, never in this file: GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET (and optionally ALLOWED_EMAIL_DOMAIN).
+  // Local dev: put them in .dev.vars, which is git-ignored.
+}

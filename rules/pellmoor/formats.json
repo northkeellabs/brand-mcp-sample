@@ -1,0 +1,149 @@
+{
+  "brand": "pellmoor",
+  "channels": {
+    "web": [
+      {
+        "id": "hero",
+        "name": "Home page hero",
+        "width": 1920,
+        "height": 720,
+        "unit": "px",
+        "safeMargin": 64,
+        "slots": [
+          {
+            "name": "headline",
+            "required": true,
+            "maxChars": 50
+          },
+          {
+            "name": "call-to-action",
+            "required": true,
+            "maxChars": 20
+          },
+          {
+            "name": "logo",
+            "required": true
+          },
+          {
+            "name": "image",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "card",
+        "name": "Product card",
+        "width": 800,
+        "height": 600,
+        "unit": "px",
+        "safeMargin": 32,
+        "slots": [
+          {
+            "name": "headline",
+            "required": true,
+            "maxChars": 36
+          },
+          {
+            "name": "image",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "social": [
+      {
+        "id": "square-post",
+        "name": "Square post",
+        "width": 1080,
+        "height": 1080,
+        "unit": "px",
+        "safeMargin": 80,
+        "slots": [
+          {
+            "name": "headline",
+            "required": true,
+            "maxChars": 45
+          },
+          {
+            "name": "logo",
+            "required": true
+          },
+          {
+            "name": "image",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "landscape-post",
+        "name": "Landscape post",
+        "width": 1200,
+        "height": 628,
+        "unit": "px",
+        "safeMargin": 56,
+        "slots": [
+          {
+            "name": "headline",
+            "required": true,
+            "maxChars": 55
+          },
+          {
+            "name": "logo",
+            "required": true
+          },
+          {
+            "name": "image",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "email": [
+      {
+        "id": "header",
+        "name": "Email header",
+        "width": 640,
+        "height": 180,
+        "unit": "px",
+        "safeMargin": 20,
+        "slots": [
+          {
+            "name": "headline",
+            "required": true,
+            "maxChars": 40
+          },
+          {
+            "name": "logo",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "print": [
+      {
+        "id": "trail-sign",
+        "name": "Trail sign",
+        "width": 297,
+        "height": 420,
+        "unit": "mm",
+        "safeMargin": 15,
+        "slots": [
+          {
+            "name": "headline",
+            "required": true,
+            "maxChars": 40
+          },
+          {
+            "name": "subline",
+            "required": false,
+            "maxChars": 100
+          },
+          {
+            "name": "logo",
+            "required": true
+          }
+        ]
+      }
+    ]
+  }
+}

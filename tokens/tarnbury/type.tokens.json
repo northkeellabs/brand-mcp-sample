@@ -1,0 +1,101 @@
+{
+  "font": {
+    "family": {
+      "heading": {
+        "$type": "fontFamily",
+        "$value": [
+          "Georgia",
+          "Cambria",
+          "serif"
+        ]
+      },
+      "body": {
+        "$type": "fontFamily",
+        "$value": [
+          "Trebuchet MS",
+          "Verdana",
+          "sans-serif"
+        ]
+      }
+    },
+    "size": {
+      "xs": {
+        "$type": "dimension",
+        "$value": {
+          "value": 14,
+          "unit": "px"
+        }
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": {
+          "value": 16,
+          "unit": "px"
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 20,
+          "unit": "px"
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": {
+          "value": 26,
+          "unit": "px"
+        }
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": {
+          "value": 34,
+          "unit": "px"
+        }
+      },
+      "xxl": {
+        "$type": "dimension",
+        "$value": {
+          "value": 46,
+          "unit": "px"
+        }
+      }
+    }
+  },
+  "type": {
+    "$type": "typography",
+    "heading": {
+      "$value": {
+        "fontFamily": "{font.family.heading}",
+        "fontSize": "{font.size.xxl}",
+        "fontWeight": 700,
+        "lineHeight": 1.15
+      }
+    },
+    "subheading": {
+      "$value": {
+        "fontFamily": "{font.family.heading}",
+        "fontSize": "{font.size.lg}",
+        "fontWeight": 700,
+        "lineHeight": 1.25
+      }
+    },
+    "body": {
+      "$value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "{font.size.md}",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      }
+    },
+    "caption": {
+      "$value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "{font.size.xs}",
+        "fontWeight": 400,
+        "lineHeight": 1.4
+      }
+    }
+  }
+}

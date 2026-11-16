@@ -1,0 +1,30 @@
+{
+  "radius": {
+    "$type": "dimension",
+    "small": {
+      "$type": "dimension",
+      "$value": {
+        "value": 6,
+        "unit": "px"
+      }
+    },
+    "large": {
+      "$type": "dimension",
+      "$value": {
+        "value": 18,
+        "unit": "px"
+      }
+    }
+  },
+  "spacing": {
+    "$type": "dimension",
+    "section": {
+      "$type": "dimension",
+      "$value": "{space.7}"
+    },
+    "gutter": {
+      "$type": "dimension",
+      "$value": "{space.5}"
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "color": {
+    "$description": "Pellmoor Outdoors colour tokens (invented brand, sample)",
+    "palette": {
+      "slate": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1216,
+            0.1686,
+            0.2
+          ],
+          "alpha": 1,
+          "hex": "#1f2b33"
+        },
+        "$description": "Deep slate, main text and dark surfaces"
+      },
+      "bone": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9529,
+            0.9412,
+            0.9098
+          ],
+          "alpha": 1,
+          "hex": "#f3f0e8"
+        },
+        "$description": "Bone white page background"
+      },
+      "pine": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1765,
+            0.3569,
+            0.3059
+          ],
+          "alpha": 1,
+          "hex": "#2d5b4e"
+        },
+        "$description": "Pine green, primary brand colour"
+      },
+      "signal": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7686,
+            0.251,
+            0.0588
+          ],
+          "alpha": 1,
+          "hex": "#c4400f"
+        },
+        "$description": "Signal orange, calls to action"
+      },
+      "lake": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1843,
+            0.4353,
+            0.5608
+          ],
+          "alpha": 1,
+          "hex": "#2f6f8f"
+        },
+        "$description": "Lake blue, secondary"
+      },
+      "sand": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.851,
+            0.8118,
+            0.7216
+          ],
+          "alpha": 1,
+          "hex": "#d9cfb8"
+        },
+        "$description": "Sand, borders and muted surfaces"
+      },
+      "sun": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.949,
+            0.7608,
+            0.1882
+          ],
+          "alpha": 1,
+          "hex": "#f2c230"
+        },
+        "$description": "Sun yellow, decoration only"
+      }
+    },
+    "role": {
+      "background": {
+        "$type": "color",
+        "$value": "{color.palette.bone}"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{color.palette.sand}"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.palette.slate}"
+      },
+      "primary": {
+        "$type": "color",
+        "$value": "{color.palette.pine}"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "{color.palette.signal}"
+      },
+      "support": {
+        "$type": "color",
+        "$value": "{color.palette.lake}"
+      },
+      "highlight": {
+        "$type": "color",
+        "$value": "{color.palette.sun}"
+      }
+    }
+  }
+}

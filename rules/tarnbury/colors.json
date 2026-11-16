@@ -1,0 +1,102 @@
+{
+  "brand": "tarnbury",
+  "minContrast": {
+    "body": 4.5,
+    "large": 3
+  },
+  "decorationOnly": [
+    "color.palette.honey"
+  ],
+  "allowedPairs": [
+    {
+      "foreground": "color.palette.porridge",
+      "background": "color.palette.oat",
+      "textSizes": [
+        "body",
+        "large"
+      ],
+      "use": "Body text on the page background"
+    },
+    {
+      "foreground": "color.palette.porridge",
+      "background": "color.palette.cream",
+      "textSizes": [
+        "body",
+        "large"
+      ],
+      "use": "Body text on a card"
+    },
+    {
+      "foreground": "color.palette.heather",
+      "background": "color.palette.oat",
+      "textSizes": [
+        "body",
+        "large"
+      ],
+      "use": "Headings and links on the page background"
+    },
+    {
+      "foreground": "color.palette.heather",
+      "background": "color.palette.cream",
+      "textSizes": [
+        "body",
+        "large"
+      ],
+      "use": "Headings and links on a card"
+    },
+    {
+      "foreground": "color.palette.moss",
+      "background": "color.palette.oat",
+      "textSizes": [
+        "body",
+        "large"
+      ],
+      "use": "Secondary text on the page background"
+    },
+    {
+      "foreground": "color.palette.oat",
+      "background": "color.palette.heather",
+      "textSizes": [
+        "body",
+        "large"
+      ],
+      "use": "Text on a primary colour block"
+    },
+    {
+      "foreground": "color.palette.cream",
+      "background": "color.palette.heather",
+      "textSizes": [
+        "body",
+        "large"
+      ],
+      "use": "Text on a primary colour block, lighter"
+    },
+    {
+      "foreground": "color.palette.oat",
+      "background": "color.palette.berry",
+      "textSizes": [
+        "body",
+        "large"
+      ],
+      "use": "Text on a highlight block"
+    },
+    {
+      "foreground": "color.palette.cream",
+      "background": "color.palette.moss",
+      "textSizes": [
+        "body",
+        "large"
+      ],
+      "use": "Text on a secondary colour block"
+    },
+    {
+      "foreground": "color.palette.oat",
+      "background": "color.palette.porridge",
+      "textSizes": [
+        "body",
+        "large"
+      ],
+      "use": "Reversed text on dark"
+    }
+  ]
+}

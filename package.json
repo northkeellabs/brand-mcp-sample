@@ -1,0 +1,41 @@
+﻿{
+  "name": "brand-mcp-sample",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "SAMPLE: brand MCP server with DTCG design tokens, invented brands",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build:tokens": "node scripts/build-tokens.mjs",
+    "check:rules": "node scripts/check-rules.mjs",
+    "build": "npm run build:tokens && npm run check:rules",
+    "dev": "npm run build && wrangler dev --port 8787",
+    "dev:auth": "npm run build && wrangler dev -c wrangler.auth.jsonc --port 8787",
+    "test": "npm run build && vitest run && vitest run -c vitest.auth.config.ts && vitest run -c vitest.node.config.ts",
+    "typecheck": "tsc --noEmit",
+    "eval": "node scripts/eval.mjs",
+    "samples": "node scripts/capture-samples.mjs",
+    "test:report": "vitest run --reporter=json --outputFile=scripts/test-results-worker.json && vitest run -c vitest.auth.config.ts --reporter=json --outputFile=scripts/test-results-auth.json && vitest run -c vitest.node.config.ts --reporter=json --outputFile=scripts/test-results-node.json",
+    "build:demo": "node scripts/build-demo.mjs",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "@cloudflare/workers-oauth-provider": "1.2.4",
+    "@modelcontextprotocol/server": "2.4.0",
+    "agents": "0.33.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "1.6.1",
+    "@cloudflare/workers-types": "5.20261110.1",
+    "@modelcontextprotocol/client": "2.4.0",
+    "ajv": "8.20.0",
+    "style-dictionary": "5.8.0",
+    "typescript": "7.0.2",
+    "vitest": "5.1.0",
+    "wrangler": "4.159.0"
+  }
+}

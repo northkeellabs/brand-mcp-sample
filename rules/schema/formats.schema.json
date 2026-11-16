@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "formats.schema.json",
+  "title": "Brand placement formats per channel",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "brand",
+    "channels"
+  ],
+  "properties": {
+    "brand": {
+      "type": "string",
+      "pattern": "^[a-z]+$"
+    },
+    "channels": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "enum": [
+          "web",
+          "social",
+          "email",
+          "print"
+        ]
+      },
+      "additionalProperties": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "width",
+            "height",
+            "unit",
+            "safeMargin",
+            "slots"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]*$"
+            },
+            "name": {
+              "type": "string"
+            },
+            "width": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "height": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "unit": {
+              "enum": [
+                "px",
+                "mm"
+              ]
+            },
+            "safeMargin": {
+              "type": "number",
+              "minimum": 0
+            },
+            "slots": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "name",
+                  "required"
+                ],
+                "properties": {
+                  "name": {
+                    "enum": [
+                      "headline",
+                      "subline",
+                      "logo",
+                      "image",
+                      "call-to-action"
+                    ]
+                  },
+                  "required": {
+                    "type": "boolean"
+                  },
+                  "maxChars": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
