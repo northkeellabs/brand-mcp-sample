@@ -3,6 +3,7 @@
 // allowed pair really meets the brand's minimum contrast for each text size it claims. Exits 1 on any problem.
 import Ajv2020 from "ajv/dist/2020.js";
 import { existsSync, readFileSync } from "node:fs";
+import { pathToFileURL } from "node:url";
 import { BRANDS } from "./brands.mjs";
 import { contrastRatio } from "../src/contrast.mjs";
 
@@ -53,7 +54,7 @@ export function loadPalette(brand) {
   return Object.fromEntries(list.filter((t) => t.path.startsWith("color.palette.")).map((t) => [t.path, t.value]));
 }
 
-if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`) {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   let bad = 0;
   for (const brand of BRANDS) {
     const dir = process.env.RULES_DIR || "rules"; // override is for the tests only
