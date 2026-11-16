@@ -1,0 +1,12 @@
+<!doctype html><html><body style="font:12px sans-serif;margin:12px">
+<p>DTCG 2025.10 export: one file per brand plus shared base. Read-only.</p>
+<div id="out"></div>
+<script>
+onmessage = e => { const msg = e.data.pluginMessage; if (!msg || msg.type !== 'files') return;
+  const out = document.getElementById('out');
+  for (const [name, data] of Object.entries(msg.files)) {
+    const a = document.createElement('a'); a.textContent = 'Download ' + name + '.tokens.json';
+    a.download = name + '.tokens.json'; a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }));
+    a.style.display = 'block'; a.style.margin = '6px 0'; out.appendChild(a);
+  } };
+</script></body></html>

@@ -1,0 +1,356 @@
+{
+  "color": {
+    "palette": {
+      "slate": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1216,
+            0.1686,
+            0.2
+          ],
+          "alpha": 1,
+          "hex": "#1f2b33"
+        },
+        "$description": "Deep slate, main text and dark surfaces",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:24"
+          }
+        }
+      },
+      "bone": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9529,
+            0.9412,
+            0.9098
+          ],
+          "alpha": 1,
+          "hex": "#f3f0e8"
+        },
+        "$description": "Bone white page background",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:25"
+          }
+        }
+      },
+      "pine": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1765,
+            0.3569,
+            0.3059
+          ],
+          "alpha": 1,
+          "hex": "#2d5b4e"
+        },
+        "$description": "Pine green, primary brand colour",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:26"
+          }
+        }
+      },
+      "signal": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7686,
+            0.251,
+            0.0588
+          ],
+          "alpha": 1,
+          "hex": "#c4400f"
+        },
+        "$description": "Signal orange, calls to action",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:27"
+          }
+        }
+      },
+      "lake": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1843,
+            0.4353,
+            0.5608
+          ],
+          "alpha": 1,
+          "hex": "#2f6f8f"
+        },
+        "$description": "Lake blue, secondary",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:28"
+          }
+        }
+      },
+      "sand": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.851,
+            0.8118,
+            0.7216
+          ],
+          "alpha": 1,
+          "hex": "#d9cfb8"
+        },
+        "$description": "Sand, borders and muted surfaces",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:29"
+          }
+        }
+      },
+      "sun": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.949,
+            0.7608,
+            0.1882
+          ],
+          "alpha": 1,
+          "hex": "#f2c230"
+        },
+        "$description": "Sun yellow, decoration only",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:30"
+          }
+        }
+      }
+    },
+    "role": {
+      "background": {
+        "$type": "color",
+        "$value": "{color.palette.bone}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:52"
+          }
+        }
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{color.palette.sand}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:53"
+          }
+        }
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.palette.slate}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:54"
+          }
+        }
+      },
+      "primary": {
+        "$type": "color",
+        "$value": "{color.palette.pine}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:55"
+          }
+        }
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "{color.palette.signal}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:56"
+          }
+        }
+      },
+      "support": {
+        "$type": "color",
+        "$value": "{color.palette.lake}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:57"
+          }
+        }
+      },
+      "highlight": {
+        "$type": "color",
+        "$value": "{color.palette.sun}",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:58"
+          }
+        }
+      }
+    }
+  },
+  "radius": {
+    "small": {
+      "$type": "dimension",
+      "$value": {
+        "value": 2,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.figma": {
+          "variableId": "VariableID:1:59"
+        }
+      }
+    },
+    "large": {
+      "$type": "dimension",
+      "$value": {
+        "value": 4,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.figma": {
+          "variableId": "VariableID:1:60"
+        }
+      }
+    }
+  },
+  "spacing": {
+    "section": {
+      "$type": "dimension",
+      "$value": "{space.7}",
+      "$extensions": {
+        "com.figma": {
+          "variableId": "VariableID:1:61"
+        }
+      }
+    },
+    "gutter": {
+      "$type": "dimension",
+      "$value": "{space.5}",
+      "$extensions": {
+        "com.figma": {
+          "variableId": "VariableID:1:62"
+        }
+      }
+    }
+  },
+  "font": {
+    "size": {
+      "xs": {
+        "$type": "dimension",
+        "$value": {
+          "value": 13,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:63"
+          }
+        }
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": {
+          "value": 15,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:64"
+          }
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 19,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:65"
+          }
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:66"
+          }
+        }
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": {
+          "value": 32,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:67"
+          }
+        }
+      },
+      "xxl": {
+        "$type": "dimension",
+        "$value": {
+          "value": 44,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:68"
+          }
+        }
+      }
+    },
+    "family": {
+      "heading": {
+        "$type": "fontFamily",
+        "$value": [
+          "Arial Narrow",
+          "Helvetica Neue",
+          "sans-serif"
+        ],
+        "$description": "CSS font stack, first family is primary",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:69"
+          }
+        }
+      },
+      "body": {
+        "$type": "fontFamily",
+        "$value": [
+          "Segoe UI",
+          "Helvetica",
+          "sans-serif"
+        ],
+        "$description": "CSS font stack, first family is primary",
+        "$extensions": {
+          "com.figma": {
+            "variableId": "VariableID:1:70"
+          }
+        }
+      }
+    }
+  }
+}
