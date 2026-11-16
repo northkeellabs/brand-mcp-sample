@@ -5,7 +5,8 @@
       "$value": {
         "value": 4,
         "unit": "px"
-      }
+      },
+      "$description": "Shared spacing scale used by every brand"
     },
     "2": {
       "$type": "dimension",
@@ -55,48 +56,35 @@
         "value": 64,
         "unit": "px"
       }
-    },
-    "$description": "Shared spacing scale used by every brand",
-    "$type": "dimension"
-  },
-  "duration": {
-    "$type": "duration",
-    "fast": {
-      "$value": {
-        "value": 120,
-        "unit": "ms"
-      }
-    },
-    "base": {
-      "$value": {
-        "value": 240,
-        "unit": "ms"
-      }
     }
   },
   "font": {
     "weight": {
-      "$type": "fontWeight",
       "regular": {
+        "$type": "fontWeight",
         "$value": 400
       },
       "medium": {
+        "$type": "fontWeight",
         "$value": 500
       },
       "bold": {
+        "$type": "fontWeight",
         "$value": 700
       },
       "black": {
+        "$type": "fontWeight",
         "$value": 800
       }
     }
   },
   "line": {
-    "$type": "number",
     "tight": {
+      "$type": "number",
       "$value": 1.15
     },
     "normal": {
+      "$type": "number",
       "$value": 1.5
     }
   }

@@ -37,7 +37,7 @@ function brandData(b) {
   const flat = readJson(`build/${b}/tokens.list.json`);
   const colors = readJson(`rules/${b}/colors.json`);
   const formats = readJson(`rules/${b}/formats.json`);
-  const dtcgColors = readJson(`tokens/${b}/color.tokens.json`).color;
+  const dtcgColors = readJson(`tokens/${b}/figma.tokens.json`).color;
   const hex = Object.fromEntries(flat.filter((t) => t.path.startsWith("color.palette.")).map((t) => [t.path.replace("color.palette.", ""), t.value]));
   const sizes = flat.filter((t) => t.path.startsWith("font.size.")).map((t) => ({ name: t.path.replace("font.size.", ""), value: t.value }));
   const family = Object.fromEntries(flat.filter((t) => t.path.startsWith("font.family.")).map((t) => [t.path.replace("font.family.", ""), t.value]));

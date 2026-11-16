@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build:plugin": "node scripts/build-plugin.mjs",
+    "tokens:from-figma": "node scripts/tokens-from-figma.mjs",
     "build:tokens": "node scripts/build-tokens.mjs",
     "check:rules": "node scripts/check-rules.mjs",
     "build": "npm run build:tokens && npm run check:rules",

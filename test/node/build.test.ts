@@ -27,7 +27,7 @@ describe("contrast math", () => {
 
 describe("token build output (Style Dictionary v5, DTCG 2025.10)", () => {
   it.each(BRANDS)("%s: every colour token is a valid 2025.10 colour object", (b) => {
-    const files = ["color"].map((f) => readJson(`tokens/${b}/${f}.tokens.json`));
+    const files = ["figma"].map((f) => readJson(`tokens/${b}/${f}.tokens.json`));
     const palette = files[0].color.palette;
     expect(Object.keys(palette).length).toBeGreaterThanOrEqual(6);
     for (const [name, t] of Object.entries<any>(palette)) {
@@ -40,7 +40,7 @@ describe("token build output (Style Dictionary v5, DTCG 2025.10)", () => {
     }
   });
   it.each(BRANDS)("%s: dimensions use the 2025.10 {value, unit} object", (b) => {
-    const t = readJson(`tokens/${b}/type.tokens.json`);
+    const t = readJson(`tokens/${b}/figma.tokens.json`);
     expect(t.font.size.md.$value).toEqual({ value: expect.any(Number), unit: "px" });
   });
   it.each(BRANDS)("%s: CSS has scoped custom properties and no unresolved aliases", (b) => {

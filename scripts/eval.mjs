@@ -19,7 +19,7 @@ const ratio = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p);
 const trunc2 = (r) => Math.floor(r * 100) / 100;
 
 const tok = (brand, file) => readJson(`tokens/${brand}/${file}.tokens.json`);
-const hexOf = (brand, name) => tok(brand, "color").color.palette[name].$value.hex;
+const hexOf = (brand, name) => tok(brand, "figma").color.palette[name].$value.hex;
 const fmt = (brand) => readJson(`rules/${brand}/formats.json`);
 const col = (brand) => readJson(`rules/${brand}/colors.json`);
 
@@ -84,7 +84,7 @@ await q(6, "What is tarnbury's heading font stack (CSS)?", async () => {
 await q(7, "What is the largest font size token (xxl) of tarnbury?", async () => {
   const r = await call("get_tokens", { brand: "tarnbury", category: "font", format: "css" });
   const m = /--font-size-xxl:\s*([^;]+);/.exec(r.data.css);
-  return eq(m?.[1], `${tok("tarnbury", "type").font.size.xxl.$value.value}px`);
+  return eq(m?.[1], `${tok("tarnbury", "figma").font.size.xxl.$value.value}px`);
 });
 await q(8, "What does the shared base spacing token space.6 resolve to for pellmoor?", async () => {
   const r = await call("get_tokens", { brand: "pellmoor", category: "space", format: "css" });

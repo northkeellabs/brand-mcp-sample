@@ -1,0 +1,17 @@
+{
+  "duration": {
+    "$type": "duration",
+    "fast": {
+      "$value": {
+        "value": 120,
+        "unit": "ms"
+      }
+    },
+    "base": {
+      "$value": {
+        "value": 240,
+        "unit": "ms"
+      }
+    }
+  }
+}

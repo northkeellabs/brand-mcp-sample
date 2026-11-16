@@ -1,6 +1,5 @@
 {
   "color": {
-    "$description": "Pellmoor Outdoors colour tokens (invented brand, sample)",
     "palette": {
       "slate": {
         "$type": "color",
@@ -129,6 +128,98 @@
       "highlight": {
         "$type": "color",
         "$value": "{color.palette.sun}"
+      }
+    }
+  },
+  "radius": {
+    "small": {
+      "$type": "dimension",
+      "$value": {
+        "value": 2,
+        "unit": "px"
+      }
+    },
+    "large": {
+      "$type": "dimension",
+      "$value": {
+        "value": 4,
+        "unit": "px"
+      }
+    }
+  },
+  "spacing": {
+    "section": {
+      "$type": "dimension",
+      "$value": "{space.7}"
+    },
+    "gutter": {
+      "$type": "dimension",
+      "$value": "{space.5}"
+    }
+  },
+  "font": {
+    "size": {
+      "xs": {
+        "$type": "dimension",
+        "$value": {
+          "value": 13,
+          "unit": "px"
+        }
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": {
+          "value": 15,
+          "unit": "px"
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 19,
+          "unit": "px"
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        }
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "xxl": {
+        "$type": "dimension",
+        "$value": {
+          "value": 44,
+          "unit": "px"
+        }
+      }
+    },
+    "family": {
+      "heading": {
+        "$type": "fontFamily",
+        "$value": [
+          "Arial Narrow",
+          "Helvetica Neue",
+          "sans-serif"
+        ],
+        "$description": "CSS font stack, first family is primary"
+      },
+      "body": {
+        "$type": "fontFamily",
+        "$value": [
+          "Segoe UI",
+          "Helvetica",
+          "sans-serif"
+        ],
+        "$description": "CSS font stack, first family is primary"
       }
     }
   }
