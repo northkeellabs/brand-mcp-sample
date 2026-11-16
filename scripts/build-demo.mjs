@@ -211,7 +211,7 @@ const html = `<!doctype html>
   <section id="pipeline">
     <h2><span class="num mono">2</span> The token pipeline</h2>
     <ol class="pipe">
-      <li class="stage future"><span class="stage-name">Figma Variables</span><span class="stage-sub">Where designers edit. Exported to DTCG JSON. Not built in this sample.</span></li>
+      <li class="stage"><span class="stage-name">Figma Variables</span><span class="stage-sub">Exported from a real Figma file with the plugin in <span class="mono">figma/plugin</span>; round-trip test in CI</span></li>
       <li class="stage"><span class="stage-name">DTCG JSON</span><span class="stage-sub mono">tokens/&lt;brand&gt;/<wbr>*.tokens.json plus shared base</span></li>
       <li class="stage"><span class="stage-name">Style Dictionary v5</span><span class="stage-sub mono">npm run build:tokens</span></li>
       <li class="stage"><span class="stage-name">CSS and TypeScript</span><span class="stage-sub mono">build/&lt;brand&gt;/<wbr>tokens.css, src/<wbr>generated/<wbr>tokens.ts</span></li>

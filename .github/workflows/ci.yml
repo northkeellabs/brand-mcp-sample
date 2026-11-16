@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      # Style Dictionary token build, then the brand rule checks against the built tokens
+      - run: npm run build
+      - run: npm run typecheck
+      # Figma plugin bundle must be current (a test also checks it)
+      - run: npm run build:plugin
+      - run: git diff --exit-code -- figma/plugin/dist
+      # tokens/ must be exactly what the Figma export produces
+      - run: npm run tokens:from-figma
+      - run: git diff --exit-code -- tokens
+      - name: Workers runtime tests (server and tools)
+        run: npx vitest run
+      - name: Workers runtime tests (Google sign-in, mocked Google)
+        run: npx vitest run -c vitest.auth.config.ts
+      - name: Node tests (token build, rules, Figma round trip and exporter)
+        run: npx vitest run -c vitest.node.config.ts
