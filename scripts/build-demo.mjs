@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env node
+#!/usr/bin/env node
 // Builds the static demo page from the real build outputs: build/<brand>/tokens.css, rules/, scripts/samples-output.json
 // (captured from `wrangler dev`), scripts/eval-output.txt and the vitest JSON reports. Nothing on the page is typed in by hand
 // except explanatory prose. Run order: npm run build, npm run test:report, npm run eval, npm run samples, npm run build:demo.

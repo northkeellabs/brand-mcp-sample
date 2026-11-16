@@ -1,4 +1,4 @@
-﻿# brand-mcp-sample
+# brand-mcp-sample
 
 **SAMPLE project. The two brands (Tarnbury Oats, Pellmoor Outdoors) are invented, there are no real logos, and nothing here is a real company's brand.**
 
