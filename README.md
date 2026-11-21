@@ -139,3 +139,7 @@ DTCG Format Module 2025.10, style-dictionary 5.8.0, @modelcontextprotocol/server
 ## Licence
 
 MIT, see `LICENSE`.
+
+---
+
+Built by [Northkeel Labs](https://northkeellabs.com): AI agents and MCP servers that run inside your own systems.
